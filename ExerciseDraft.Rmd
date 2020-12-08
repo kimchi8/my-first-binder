@@ -1,0 +1,46 @@
+---
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+# this is for the introR_workshop file
+```{r setup, include=FALSE}
+library(learnr)
+library(gradethis)
+gradethis_setup()
+```
+<!-- exercise one -->
+* You can use R like a calculator.  Try typing `2+8` into the **R console**.
+
+```{r r_console_exercise, exercise = TRUE}
+
+```
+
+```{r r_console_exercise-solution}
+2+8
+```
+
+```{r r_console_exercise-check}
+grade_code("Correct!")
+```
+
+<!-- exercise two  -->
+
+How would you inspect the content of the cells in 4^th^ column, rows 3 to 5 of 
+the `ICE_Ire_bio` data set?
+
+```{r exercise_accessing_individual_cells_table, exercise = TRUE}
+
+```
+
+```{r exercise_accessing_individual_cells_table-solution}
+ICE_Ire_bio[3:5, 4]
+```
+
+```{r exercise_accessing_individual_cells_table-check}
+grade_code("Correct!")
+```
+
+<div id="exercise_accessing_individual_cells_table-hint">
+**Hint:** Fill in the missing blanks: ICE_Ire_bio[ , ].
+
+</div>
